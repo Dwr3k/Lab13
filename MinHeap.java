@@ -173,7 +173,7 @@ public class MinHeap <E extends Comparable<? super E>>
 				second = heap[(2 * position) + 2];
 			}
 
-			if(first == null && second == null)
+			if(first == null && second == null || (rootValue.compareTo(first) ==-1 && rootValue.compareTo(second) == -1))
 			{
 				break;
 			}
